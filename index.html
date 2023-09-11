@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Audio Player</title>
 </head>
 <body>
+        <div class="wrapper">
+            <div class="player">
+                <div class="player__circle">
+                    <img src="" alt="" class="circle__img">
+                </div>
+
+                <div class="player__content">
+                    <div class="title__name">Dua Lipa</div>
+                    <div class="title__name-song">Don't Start Now</div>
     
+                    <div class="progress__container">
+                        <div class="progress"></div>
+                    </div>
+
+                        
+                    <div class="buttons">
+                        <div class="btn prev"><img class="img__btn" src="./img/svg/backward.png" alt="btn"></div>
+                        <div class="btn play"><img class="img__btn img__src" src="./img/svg/play.png" alt="btn"></div>
+                        <div class="btn next"><img class="img__btn" src="./img/svg/forward.png" alt="btn"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="./js/index.js"></script>
 </body>
 </html>

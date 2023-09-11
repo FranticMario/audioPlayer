@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+}
+
+.player {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    width: 500px;
+    height: 550px;
+    
+    padding: 40px;
+    border-radius: 60px;
+    border: 1px solid #FFF;
+    background: linear-gradient(180deg, rgba(203, 203, 203, 0.15) 67.55%, rgba(0, 0, 0, 0.32) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+.player__circle {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: -12%;
+    left: 24%;
+    border-radius: 260px;
+    border: 2px solid #FFF;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.player__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap:25px;
+}
+
+.title__name {
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: Sacramento;
+    font-size: 83px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title__name-song {
+    color: #000;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.progress__container {
+    width: 320px;
+    height: 6px;
+    background: #FFF;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.progress {
+    width: 115px;
+    height: 6px;
+    background: #000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    gap: 40px;
+}
+
+.img__btn {
+    height: 50px;
+
+}
